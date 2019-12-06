@@ -1,5 +1,5 @@
 {
-    "name": "zefy/laravel-sso",
+    "name": "websta/laravel-sso",
     "description": "Simple PHP SSO integration for Laravel",
     "keywords": ["laravel", "sso", "authentication", "login"],
     "homepage": "https://github.com/zefy/laravel-sso",
