@@ -28,8 +28,14 @@ Client visits Broker and unique token is generated. When new token is generated 
 # Installation
 ### Server
 Install this package using composer.
+First add this line to composer.json
+
+    "repositories": [
+        {"type": "vcs", "url": "git@github.com:webstasolutions/laravel-sso.git"}
+    ],
+Then you can use
 ```shell
-$ composer require zefy/laravel-sso
+$ composer require websta/laravel-sso:1.0.7
 ```
 
 
@@ -65,8 +71,14 @@ $ php artisan sso:broker:create {name}
 
 ### Broker
 Install this package using composer.
+First add this line to composer.json
+
+    "repositories": [
+        {"type": "vcs", "url": "git@github.com:webstasolutions/laravel-sso.git"}
+    ],
+Then you can use
 ```shell
-$ composer require zefy/laravel-sso
+$ composer require websta/laravel-sso:1.0.7
 ```
 
 
@@ -79,7 +91,10 @@ $ php artisan vendor:publish --provider="Zefy\LaravelSSO\SSOServiceProvider"
 Change `type` value in `config/laravel-sso.php` file from `server`
  to `broker`.
 
- 
+ Create table where information about your broker will be stored. Just about this one broker. Copy secret from server and paste it here.
+ ```shell
+ $ php artisan migrate --path=vendor/zefy/laravel-sso/database/migrations
+ ```
 
 Set 3 new options in your `.env` file:
 ```shell
