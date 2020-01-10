@@ -30,11 +30,24 @@ return [
     'brokersTable' => 'brokers',
 
     // Logged in user fields sent to brokers.
-    'userFields' => [
-        // Return array field name => database column name
-        'id' => 'id',
-    ],
+        'userFields' => [
+            // Return array field name => database column name
+            'id' => 'id',
+            'first_name' => 'first_name',
+            'last_name' => 'last_name',
+            'email' => 'email',
+            'image' => 'image',
+            'admin' => 'admin',
+            'address' => 'address',
+            'bank_account' => 'bank_account',
+            'created_at' => 'created_at',
+            'updated_at' => 'updated_at',
+            'deleted_at' => 'updated_at',
+            'remember_token' => 'remember_token',
+        ],
 
+    // What is the name of the column that users use to login with (generally 'username' or 'email)
+    'usernameField' => 'email',
     /*
      |--------------------------------------------------------------------------
      | Settings necessary for the SSO broker.
