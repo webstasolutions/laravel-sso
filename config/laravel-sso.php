@@ -44,6 +44,7 @@ return [
             'updated_at' => 'updated_at',
             'deleted_at' => 'updated_at',
             'remember_token' => 'remember_token',
+            'api_token' => 'api_token',
         ],
 
     // What is the name of the column that users use to login with (generally 'username' or 'email)
